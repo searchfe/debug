@@ -4,7 +4,7 @@
   "description": "umd port for npm debug",
   "main": "index.js",
   "scripts": {
-    "dist": "browserify node_modules/debug | uglifyjs -c -m > index.js",
+    "dist": "browserify -s node_modules/debug | uglifyjs -c -m > index.js",
     "postversion": "git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
